@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+}
+
+header h1 {
+    color: whitesmoke;
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    margin: 0%;
+}
+
+#navigate {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    background-color: lightgrey;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu>li:hover {
+    background-color: black;
+}
+
+.menu li:nth-child(2):hover #dropdown-1,
+.menu li:nth-child(3):hover #dropdown-2 {
+    display: block;
+}
+
+#dropdown-1,
+#dropdown-2 {
+    position: absolute;
+    display: none;
+    top: 42.5px;
+    background-color: white;
+    width: auto;
+    max-width: 150px;
+    padding: 0;
+}
+
+#dropdown-1 li,
+#dropdown-2 li {
+    display: block;
+}
+
+#dropdown-1 li a,
+#dropdown-2 li a {
+    color: blue;
+    font-size: 16px;
+}
+
+.rotate {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: cyan;
+    border: 2px solid steelblue;
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    0% {
+        background-image: url(Animation/ani1.jpg);
+        background-size: 100% 100%;
+    }
+
+    25% {
+        background-image: url(Animation/ani2.png);
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-image: url(Animation/ani3.jpg);
+        background-size: 100% 100%;
+    }
+
+    75% {
+        background-image: url(Animation/ani4.jpg);
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-image: url(Animation/ani5.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+#covid-care,
+#diabetes-care {
+    margin: 10px;
+    
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.care {
+    position: relative;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 260px;
+    height: 350px;
+    background-color: lightgrey;
+    display: inline-block;
+    transition: .3s ease;
+}
+
+.care:hover {
+    /*  width: 280px;
+    height: 370px;   */
+    padding: 20px;
+}
+
+.care img {
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    margin: auto;
+
+
+}
+
+.care p {
+    margin: 5px;
+    color: blue;
+}
+
+.care button {
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    padding: 5px;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+
+
+footer h3 {
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+    margin: 0%;
+    padding: 15px;
+}
